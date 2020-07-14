@@ -15,7 +15,7 @@ export default {
 
 export const taskData = {
   id: '1',
-  title: 'Test Task',
+  title: 'hello storybook',
   state: 'TASK_INBOX',
   updatedAt: new Date(2018, 0, 1, 9, 0),
 };
@@ -28,6 +28,7 @@ export const actionsData = {
 export const Default = () => {
   return <Task task={object('task', { ...taskData })} {...actionsData} />;
 };
+
 export const Pinned = () => (
   <Task task={{ ...taskData, state: 'TASK_PINNED' }} {...actionsData} />
 );
