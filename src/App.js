@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { Provider } from 'react-redux';
+import store from './lib/redux';
+import PureTaskList from './components/PureTaskList';
 import Option from './components/Option';
 
-function App() {
-  return (
-    <div>
-      <Option title="hello" />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <Provider store={store}>
+        <PureTaskList />
+        <Option title="Hello Storybook" />
+      </Provider>
+    );
+  }
 }
 
 export default App;
