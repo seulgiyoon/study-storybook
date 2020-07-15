@@ -3,6 +3,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import Task from './Task';
+import './Task.css';
 
 export default {
   component: Task,
@@ -21,8 +22,8 @@ export const taskData = {
 };
 
 export const actionsData = {
-  onPinTask: action('onPinTask'),
-  onArchiveTask: action('onArchiveTask'),
+  onPinTask: action('firstTask'),
+  onArchiveTask: action('secondTask'),
 };
 
 export const Default = () => {
