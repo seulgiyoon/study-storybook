@@ -16,7 +16,6 @@ export const pinTask = (id) => ({ type: actions.PIN_TASK, id });
 function taskStateReducer(taskState) {
   return (state, action) => {
     return {
-      ...state,
       tasks: state.tasks.map((task) =>
         task.id === action.id ? { ...task, state: taskState } : task
       ),
@@ -43,6 +42,8 @@ const defaultTasks = [
   { id: '2', title: 'Something more', state: 'TASK_INBOX' },
   { id: '3', title: 'Something else', state: 'TASK_INBOX' },
   { id: '4', title: 'Something again', state: 'TASK_INBOX' },
+  { id: '5', title: 'Something again', state: 'TASK_INBOX' },
+  { id: '6', title: 'Something again', state: 'TASK_INBOX' },
 ];
 
 // We export the constructed redux store

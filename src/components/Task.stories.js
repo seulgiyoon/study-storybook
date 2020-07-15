@@ -3,12 +3,12 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, object } from '@storybook/addon-knobs/react';
 
 import Task from './Task';
-import './Task.css';
 
 export default {
   component: Task,
   title: 'Task',
   decorators: [withKnobs],
+  // 디자인 완성 예시 이미지
   parameters: { assets: ['designs/items.png'] },
   // Our exports that end in "Data" are not stories.
   excludeStories: /.*Data$/,

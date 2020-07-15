@@ -25,12 +25,22 @@ export const withPinnedTasksData = [
   { id: '6', title: 'Task 6 (pinned)', state: 'TASK_PINNED' },
 ];
 
+export const withArchivedTasksData = [
+  ...defaultTasksData.slice(0, 4),
+  { id: '5', title: 'Task 5 (archived)', state: 'TASK_ARCHIVED' },
+  { id: '6', title: 'Task 6 (archived)', state: 'TASK_ARCHIVED' },
+];
+
 export const Default = () => (
   <PureTaskList tasks={defaultTasksData} {...actionsData} />
 );
 
 export const WithPinnedTasks = () => (
   <PureTaskList tasks={withPinnedTasksData} {...actionsData} />
+);
+
+export const WithArchivedTasks = () => (
+  <PureTaskList tasks={withArchivedTasksData} {...actionsData} />
 );
 
 export const Loading = () => (

@@ -6,11 +6,23 @@ export default function Option({ title, checked }) {
     <StyledOptionWrapper>
       <div>{title}</div>
       <div>
-        <input type="radio" id="option_1" checked={checked === 1}></input>
+        <input
+          type="radio"
+          id="option_1"
+          defaultChecked={checked === 1}
+        ></input>
         <label htmlFor="option_1">Option 1</label>
-        <input type="radio" id="option_2" checked={checked === 2}></input>
+        <input
+          type="radio"
+          id="option_2"
+          defaultChecked={checked === 2}
+        ></input>
         <label htmlFor="option_2">Option 2</label>
-        <input type="radio" id="option_3" checked={checked === 3}></input>
+        <input
+          type="radio"
+          id="option_3"
+          defaultChecked={checked === 3}
+        ></input>
         <label htmlFor="option_3">Option 3</label>
       </div>
     </StyledOptionWrapper>
