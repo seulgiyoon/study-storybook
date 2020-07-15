@@ -12,7 +12,7 @@ export default {
 };
 
 export const defaultTasksData = [
-  { ...taskData, id: '1', title: 'Task 1' },
+  { ...taskData, id: '1', title: 'Task 0' },
   { ...taskData, id: '2', title: 'Task 2' },
   { ...taskData, id: '3', title: 'Task 3' },
   { ...taskData, id: '4', title: 'Task 4' },
